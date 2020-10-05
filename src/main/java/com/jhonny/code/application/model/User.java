@@ -2,14 +2,12 @@ package com.jhonny.code.application.model;
 
 import lombok.Getter;
 import lombok.Setter;
-import org.springframework.stereotype.Component;
-import org.springframework.web.context.annotation.SessionScope;
 
+import javax.inject.Named;
 import java.io.Serializable;
-import java.sql.Date;
 
-@Component
-@SessionScope
+
+@Named
 @Getter
 @Setter
 public class User implements Serializable {
@@ -17,5 +15,5 @@ public class User implements Serializable {
     private String name;
     private String lastName;
     private String email;
-    private Date birthDate;
+    private String birthDate;
 }

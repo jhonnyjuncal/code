@@ -1,5 +1,5 @@
 server:
-  port: 5000
+  port: 5001
 
 spring:
   thymeleaf:
@@ -7,3 +7,10 @@ spring:
   security:
     user:
       name: admin
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password: password
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
