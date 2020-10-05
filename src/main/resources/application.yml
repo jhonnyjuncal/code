@@ -1,0 +1,9 @@
+server:
+  port: 5000
+
+spring:
+  thymeleaf:
+    enabled: false
+  security:
+    user:
+      name: admin

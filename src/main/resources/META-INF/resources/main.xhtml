@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+<h:head>
+    <meta charset="utf-8"/>
+<!--    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1"/>-->
+
+    <title>User Management</title>
+</h:head>
+
+
+<h:body>
+    <div class="container">
+        User data
+
+        <h:form id="userForm">
+            <div>
+                <label for="emailField">Email:</label>
+                <h:inputText id="emailField" autocomplete="off" value="#{user.email}" />
+            </div>
+
+            <div>
+                <label for="lastNameField">Last name:</label>
+                <h:inputText id="lastNameField" autocomplete="off" value="#{user.lastName}" />
+            </div>
+
+            <div>
+                <label for="nameField">Name:</label>
+                <h:inputText id="nameField" autocomplete="off" value="#{user.name}" />
+            </div>
+
+            <div>
+                <label for="birthDateField">Birth date:</label>
+                <h:inputText id="birthDateField" autocomplete="off" value="#{user.birthDate}" />
+            </div>
+
+            <h:commandButton type="submit" value="Save user" action="#{userManagementAction.persistNewUser}" />
+        </h:form>
+    </div>
+</h:body>
+
+</html>
